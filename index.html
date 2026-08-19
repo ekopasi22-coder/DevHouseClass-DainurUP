@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Eko Dainur Utomo Pasi, S.Pd.</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:linear-gradient(135deg,#071a2d,#0b3b55 55%,#0d6472);color:#fff;min-height:100vh
+}
+.wrap{max-width:1100px;margin:auto;padding:28px 18px 35px}
+.hero{text-align:center;padding:28px 10px 25px}
+.badge{display:inline-block;padding:7px 14px;border:1px solid #ffffff38;border-radius:999px;background:#ffffff12;font-size:13px}
+h1{font-size:clamp(28px,6vw,52px);margin:18px 0 6px;letter-spacing:-1px}
+.subtitle{font-size:clamp(16px,3vw,21px);opacity:.85}
+.school{margin-top:8px;font-weight:700;letter-spacing:.8px}
+.datetime{margin-top:18px;font-size:14px;opacity:.72}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:15px}
+.card{
+  min-height:175px;border:1px solid #ffffff20;border-radius:22px;padding:24px;
+  background:#ffffff10;backdrop-filter:blur(12px);box-shadow:0 15px 35px #00000020;
+  transition:.2s;display:flex;flex-direction:column;justify-content:space-between
+}
+.card:hover{transform:translateY(-4px);background:#ffffff17}
+.icon{font-size:38px}.title{font-size:21px;font-weight:800;margin-top:10px}.desc{opacity:.72;font-size:14px;line-height:1.5;margin-top:6px}
+.btn{
+  display:inline-block;margin-top:18px;padding:11px 15px;border-radius:12px;
+  background:#ffffff18;border:1px solid #ffffff25;color:#fff;text-decoration:none;font-weight:700;text-align:center
+}
+.btn:hover{background:#ffffff28}
+.section{margin:28px 0 12px;font-size:15px;font-weight:800;letter-spacing:.5px;opacity:.85}
+footer{text-align:center;margin-top:35px;padding-top:20px;border-top:1px solid #ffffff18;font-size:13px;opacity:.65}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.wrap{padding:18px 13px 25px}.grid{grid-template-columns:1fr}.card{min-height:150px}}
+</style>
+
+<style>
+@media(max-width:520px){
+  .wrap{padding:14px 10px 22px}
+  .hero{padding:22px 8px 20px}
+  .badge{font-size:11px;padding:6px 11px}
+  h1{font-size:clamp(27px,8vw,40px);margin:14px 0 5px}
+  .subtitle{font-size:clamp(14px,4.2vw,18px)}
+  .school{font-size:clamp(12px,3.5vw,15px);white-space:nowrap;letter-spacing:.2px}
+  .datetime{font-size:12px;margin-top:12px}
+  .grid{grid-template-columns:1fr;gap:12px;margin-top:12px}
+  .card{min-height:150px;padding:14px;border-radius:17px}
+  .icon{font-size:28px}
+  .title{font-size:15px;line-height:1.1}
+  .desc{font-size:11px;line-height:1.35}
+  .btn{font-size:11px;padding:8px 9px;margin-top:10px}
+  footer{margin-top:20px;padding-top:14px;font-size:11px}
+}
+@media(max-width:370px){
+  .grid{gap:8px}
+  .card{min-height:140px;padding:12px}
+  .title{font-size:14px}
+  .desc{font-size:10px}
+  .btn{font-size:10px;padding:7px 8px}
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <span class="badge">PORTAL GURU</span>
+    <h1>SELAMAT DATANG</h1>
+    <div class="subtitle"><strong>EKO DAINUR UTOMO PASI, S.Pd.</strong></div>
+    <div class="school">SMP NEGERI 15 BALIKPAPAN</div>
+    <div class="datetime" id="datetime"></div>
+  </header>
+
+  <div class="section">APLIKASI UTAMA</div>
+  <main class="grid">
+    <article class="card">
+      <div><div class="icon">🏃</div><div class="title">SIAP PJOK</div>
+      <div class="desc">Presensi, jurnal mengajar, penilaian, KKTP, analisis dan perangkat PJOK.</div></div>
+      <a class="btn" href="#" onclick="openApp('https://ekopasi22-coder.github.io/SIAP-PJOK-SMPN15');return false">Buka SIAP PJOK →</a>
+    </article>
+
+    <article class="card">
+      <div><div class="icon">👥</div><div class="title">MANAJEMEN KELAS</div>
+      <div class="desc">Data siswa, kehadiran dan administrasi kelas.</div></div>
+      <a class="btn" href="https://ekopasi22-coder.github.io/DAINUR-UP-CLASS">Buka Aplikasi →</a>
+    </article>
+
+    <article class="card">
+      <div><div class="icon">💰</div><div class="title">MANAJEMEN KAS KELAS</div>
+      <div class="desc">Kas masuk, pengeluaran, saldo dan laporan kas kelas.</div></div>
+      <a class="btn" href="https://ekopasi22-coder.github.io/SIAP-KAS-KELAS">Buka Aplikasi →</a>
+    </article>
+
+    <article class="card">
+      <div><div class="icon">🗂️</div><div class="title">DOKUMEN & ARSIP</div>
+      <div class="desc">Tempat menuju dokumen dan arsip administrasi yang digunakan.</div></div>
+      <a class="btn" href="#" onclick="placeholder('Dokumen & Arsip');return false">Buka Aplikasi →</a>
+    </article>
+  </main>
+
+  <footer>
+    Portal Manajemen Pembelajaran & Kelas<br>
+    Dainur UP • SMP Negeri 15 Balikpapan
+  </footer>
+</div>
+
+<script>
+function updateClock(){
+  const d=new Date();
+  document.getElementById("datetime").textContent=
+    d.toLocaleDateString("id-ID",{weekday:"long",day:"numeric",month:"long",year:"numeric"})+
+    " • "+d.toLocaleTimeString("id-ID",{hour:"2-digit",minute:"2-digit"});
+}
+function openApp(url){location.href=url}
+function placeholder(name){alert(name+" belum dihubungkan. Nanti tinggal masukkan link aplikasinya di portal ini.")}
+updateClock();setInterval(updateClock,1000);
+</script>
+</body>
+</html>
